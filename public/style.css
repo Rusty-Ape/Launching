@@ -17,6 +17,14 @@
     right: -65vw;
 }
 
+@media (max-width: 500px) {
+    .logo {
+        width: 46vw;
+        right: -45vw;
+        top: 16px;
+    }
+}
+
 .content {
     top: 50%;
     position: absolute;
@@ -24,14 +32,53 @@
     color: #fff;
 }
 
+@media (max-width: 500px) and (max-height:700px) {
+    .content {
+        top: 45%;
+    }
+}
+
+@media (max-width: 500px) and (max-height:860px) {
+    .content {
+        top: 37%;
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        top: 40%;
+    }
+}
+
 .content p {
-    font-size: 25px;
+    font-size: 16px;
+    margin-bottom: 27px;
+}
+
+@media (max-width: 380px) and (max-height:670px) {
+    .content p {
+        position: relative;
+        top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content p {
+        font-size: 18px;
+    }
 }
 
 .content h1 {
-    font-size: 64px;
+    font-size: 35px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+    .content h1 {
+        position: relative;
+        top: 30px;
+    }
 }
 
 .content h1 span {
@@ -50,6 +97,13 @@
     cursor: pointer;
 }
 
+@media (max-width: 500px) {
+    .content button {
+        position: relative;
+        top: 50px;
+    }
+}
+
 .content button img {
     width: 15px;
     margin-left: 10px;
@@ -59,12 +113,19 @@
     display: flex;
 }
 
+@media (max-width: 500px) {
+    .launch-time {
+        position: relative;
+        top: 40px;
+    }
+}
+
 .launch-time div {
     flex-basis: 140px;
 }
 
 .launch-time div p {
-    font-size: 60px;
+    font-size: 30px;
     margin-bottom: 6px;
 }
 
@@ -93,6 +154,13 @@
     color: #fff;
     padding: 3px;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    .footer {
+        position: fixed;
+        bottom: 25px;
+    }
 }
 
 .footer {
