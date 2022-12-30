@@ -168,7 +168,7 @@
 
 @media (max-width: 500px) {
     .footer {
-        position: fixed;
+        position: absolute;
         bottom: 25px;
     }
 }
