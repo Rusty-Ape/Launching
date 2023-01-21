@@ -5,7 +5,7 @@
     background-position: center;
     background-size: cover;
     padding: 0 8%;
-    position: absolute;
+    position: relative;
 }
 
 .logo {
@@ -16,15 +16,6 @@
     cursor: pointer;
     right: -65vw;
 }
-
-
-@media (min-width: 65px) and (max-height:400px) {
-    .logo {
-        right: -65vw;
-        top: 106px;
-    }
-}
-
 
 @media (max-width: 500px) {
     .logo {
@@ -39,7 +30,6 @@
     position: absolute;
     transform: translateY(-50%);
     color: #fff;
-    padding-right: 17px;
 }
 
 @media (max-width: 500px) and (max-height:700px) {
@@ -74,7 +64,7 @@
 
 @media (max-width: 500px) {
     .content p {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -160,15 +150,22 @@
 .footer {
     position: absolute;
     bottom: 0;
-    left: 50%;
     color: #fff;
+    width: 84%;
     padding: 3px;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.footer span {
+    font-size: large;
 }
 
 @media (max-width: 500px) {
     .footer {
-        position: absolute;
+        position: fixed;
         bottom: 25px;
     }
 }
@@ -176,6 +173,7 @@
 .footer {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #date {
